@@ -1,33 +1,37 @@
 #include <stdio.h>
 
 
-int st_strncmp(char *s1, char 2*, unsigned int n)
+int ft_strncmp(char *s1, char *s2, unsigned int n)
 {
     int i;
-    int same;
-
+    
+    i = 0;
     while (s1[i] != '\0' && s2[i] != '\0')
     {
-        while (str[i] < n && s2[i] < n)
+        while (s1[i] < n && s2[i] < n)
         {
             if (s1[i] == s2[i])
-            {
-                same = 0;
-            }
+            {                
+                i++;
+            }   
             else
-            {   
-                same = 1;                
-            }
+            {
+                return (1);
+            }                                              
         }
     }
-    return (same);
+    return (0);
 }
 
 int main()
 {
+    char string_1[] = "the cake is a lie";
+    char string_2[] = "the cake is pizza";
+    unsigned int n = 15;
 
-    ft_strncp(string_1, string_2, 10);
-    if (same == 0)
+    int result = ft_strncmp(string_1, string_2, n);
+
+    if (result == 0)
     {
         printf("There strings are the same");
     }
