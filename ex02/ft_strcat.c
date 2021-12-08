@@ -8,10 +8,18 @@ char    *ft_strcat(char *dest, char *src)
     x = 0;
     y = 0;
 
-    while(dest[i] != '\0')
+    while(dest[x] != '\0')
     {
-        i++;
+        x++;
     }
+    while(src[y] != '\0')
+    {
+        dest[x] = src[y];
+        x++;
+        y++;
+    }
+    dest[x] = '\0';     
+    return (dest);
 }
 
 
@@ -19,10 +27,10 @@ int main()
 {
     char dest[] = "The cake is a lie";
     char src[] = "And so are you";
-
+    
     ft_strcat(dest, src);
 
-    printf("t=The complete string is: %s", dest)
+    printf("The complete string is: %s", dest);
     return 0;
 }
 
