@@ -37,9 +37,8 @@ int main()
 {
     char str[] = "chocolatecake, carrotcake, pancake, donuts, muffin";
     char tofind[] = "cake";
-    
-    ft_strstr(str, tofind);
 
+    ft_strstr(str, tofind);
 
     printf("The complete string is: %s", str);
     return 0;

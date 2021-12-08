@@ -22,7 +22,6 @@ char    *ft_strcat(char *dest, char *src)
     return (dest);
 }
 
-
 int main()
 {
     char dest[] = "The cake is a lie";
