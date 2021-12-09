@@ -48,11 +48,11 @@ char	*ft_strstr(char *str, char *to_find)
 
 int main()
 {
-    char needle[] = "the best kind of cake is black forest";
-    char haystack[] = "fore";
+    char haystack[] = "the best kind of cake is black forest";
+    char needle[] = "fore";
 
-    ft_strstr(needle, haystack);
+    ft_strstr(haystack, needle);
 
-    printf("The complete string is: %s", ft_strstr(needle, haystack));
+    printf("The complete string is: %s", ft_strstr(haystack, needle));
     return 0;
 }
