@@ -19,7 +19,7 @@ int ft_strcmp(char *s1, char *s2)
 int main()  
 {  
    char str1[] = "the cake is a lie"; // declaration of char array  
-   char str2[] = "the cake is a pizza"; // declaration of char array  
+   char str2[] = "the cake is a lie"; // declaration of char array  
    
    int c = ft_strcmp(str1,str2); // calling compare() function  
 

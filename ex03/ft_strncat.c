@@ -26,7 +26,7 @@ int main()
     char dest[] = "The cake is a lie";
     char src[] = "And so are you";
     
-    ft_strncat(dest, src, 6);
+    ft_strncat(dest, src, 10);
 
     printf("The complete string is: %s", dest);
     return 0;
