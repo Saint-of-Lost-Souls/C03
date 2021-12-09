@@ -23,7 +23,7 @@ int main()
 {
     char string_1[] = "the cake is a lie";
     char string_2[] = "the pizza is cake";
-    unsigned int n = 3;
+    unsigned int n = 5;
 
     int result = ft_strncmp(string_1, string_2, n);
 

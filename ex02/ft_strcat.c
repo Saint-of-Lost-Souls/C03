@@ -2,21 +2,26 @@
 
 char    *ft_strcat(char *dest, char *src)
 {
-    // append dest to put src at end
+    char cat;
     int x;
     int y;
-    x = 0;
-    y = 0;
 
+    cat[sizeof(dest) + sizeof(src)];
+
+    x = 0;
+    y = 0;    
     while(dest[x] != '\0')
     {
-        x++;
+        cat[x] = dest[x];
+        ++x;
     }
+    cat[x] = ' ';
+    ++x;
     while(src[y] != '\0')
     {
-        dest[x] = src[y];
-        x++;
-        y++;
+        dest[x] += src[y];        
+        ++y;
+        ++x;        
     }
     dest[x] = '\0';     
     return (dest);
