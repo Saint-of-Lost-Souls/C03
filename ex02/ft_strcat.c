@@ -1,27 +1,28 @@
 #include <stdio.h>
 
 char    *ft_strcat(char *dest, char *src)
-{
-    char cat;
+{    
     int x;
     int y;
+    int z;
+    char combined;
 
-    cat[sizeof(dest) + sizeof(src)];
-
+    combined[sizeof(dest) + sizeof(src) + 1];
     x = 0;
-    y = 0;    
+    y = 0;
+    z = 0;    
     while(dest[x] != '\0')
     {
-        cat[x] = dest[x];
-        ++x;
+        combined[z] = dest[x];
+        x++;
+        z++;
     }
-    cat[x] = ' ';
-    ++x;
     while(src[y] != '\0')
     {
-        dest[x] += src[y];        
-        ++y;
-        ++x;        
+        combined[z]] = src[y];        
+        y++;
+        z++;
+              
     }
     dest[x] = '\0';     
     return (dest);
