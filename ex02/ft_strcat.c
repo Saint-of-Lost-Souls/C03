@@ -2,36 +2,27 @@
 
 char    *ft_strcat(char *dest, char *src)
 {    
-    int x;
-    int y;
-    int z;
-    char combined;
-
-    combined[sizeof(dest) + sizeof(src) + 1];
-    x = 0;
-    y = 0;
-    z = 0;    
-    while(dest[x] != '\0')
+    int i;
+    int j;
+       
+    while(dest[i + 1] != '\0')
+    {        
+        i++;
+    }    
+    while(src[j] != '\0')
     {
-        combined[z] = dest[x];
-        x++;
-        z++;
+        dest[i + 1] = src[j];        
+        i++;  
+        j++;            
     }
-    while(src[y] != '\0')
-    {
-        combined[z]] = src[y];        
-        y++;
-        z++;
-              
-    }
-    dest[x] = '\0';     
+    dest[i] = '\0';     
     return (dest);
 }
 
 int main()
 {
-    char dest[] = "The cake is a lie";
-    char src[] = "And so are you";
+    char dest[35] = "The cake is a lie";
+    char src[15] = "And so are you";
     
     ft_strcat(dest, src);
 
