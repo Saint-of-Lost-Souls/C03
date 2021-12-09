@@ -23,8 +23,8 @@ char    *ft_strncat(char *dest, char *src, unsigned int n)
 
 int main()
 {
-    char dest[] = "The cake is a lie";
-    char src[] = "And so are you";
+    char dest[35] = "The cake is a lie";
+    char src[15] = "And so are you";
     
     ft_strncat(dest, src, 10);
 
