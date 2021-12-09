@@ -1,45 +1,58 @@
 #include <stdio.h>
 
-char    *ft_strstr(char *str, char *tofind)
+/* char    *ft_strstr(char *str, char *tofind)
 {    
-    int x;
-    int y;
-    int c;
-
-    while (str[x] != '\0')
+    int i;
+    int j;    
+      
+    if (tofind[j] == '\0')
     {
-        if (str[x] != tofind[y])
+        return(str);
+    }
+    while (str[i] != '\0')
+    {        
+        if (str[i + j] == tofind[j])
         {
-            x++;
+            i++;
+            j = 0;
         }
-        else if(str[x] == tofind[y])
-        {
-            while (tofind[y] != '\0')
-            {
-                if (str[x] == tofind[y])
-                {
-                    x++;
-                    y++;
-                    c++;
-                }
-                else
-                {                        
-                    break;
-                }
-            }
-        }
-        
+        else 
+        {                          
+            i++;
+            j++;
+        }               
     }
     return (str);
+} */
+char	*ft_strstr(char *str, char *to_find)
+{
+	int	i;
+	int	j;
+
+	if (to_find[0] == '\0')
+		return (str);
+	i = 0;
+	while (str[i])
+	{
+		j = 0;
+		while (str[i + j] == to_find[j])
+		{
+			if (to_find[j + 1] == '\0')
+				return (&str[i]);
+			j++;
+		}
+		i++;
+	}
+	return (0);
 }
 
 int main()
 {
-    char str[] = "chocolatecake, carrotcake, pancake, donuts, muffin";
-    char tofind[] = "cake";
+    char needle[] = "the best kind of cake is black forest";
+    char haystack[] = "fore";
 
-    ft_strstr(str, tofind);
+    ft_strstr(needle, haystack);
 
-    printf("The complete string is: %s", str);
+    printf("The complete string is: %s", ft_strstr(needle, haystack));
     return 0;
 }
