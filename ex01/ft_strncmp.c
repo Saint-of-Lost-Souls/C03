@@ -11,10 +11,7 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
         {       
             return (1);
         }
-        else
-        {
-            i++;                                                                
-        }                
+        i++;                                                                                       
     }    
     return (0);
 }
