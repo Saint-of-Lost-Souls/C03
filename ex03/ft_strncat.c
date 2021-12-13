@@ -2,8 +2,8 @@
 
 char    *ft_strncat(char *dest, char *src, unsigned int n)
 {
-    int i;
-    int j;
+    unsigned int i;
+    unsigned int j;
         
     while (dest[i] != '\0')
     {
