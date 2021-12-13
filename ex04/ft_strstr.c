@@ -4,6 +4,9 @@ char    *ft_strstr(char *haystack, char *needle)
 {    
     int i;
     int j;    
+
+    i = 0;
+    j = 0;
       
     if (needle[j] == '\0')
     {
