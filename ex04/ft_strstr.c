@@ -30,7 +30,7 @@ int main()
 {
 
     char haystack[] = "the best cake is blackforest";
-    char needle[] = "fore";
+    char needle[] = "be";
 
     printf("%s", ft_strstr(haystack, needle));
     return 0;
