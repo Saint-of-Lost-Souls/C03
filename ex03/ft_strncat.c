@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char    *ft_strncat(char *dest, char *src, unsigned int n)
+char    *ft_strncat(char *dest, char *src, unsigned int nb)
 {
     unsigned int i;
     unsigned int j;
@@ -11,7 +11,7 @@ char    *ft_strncat(char *dest, char *src, unsigned int n)
     {
         i++;
     }
-    while (src[j] != '\0' && j < n)       
+    while (src[j] != '\0' && j < nb)       
     {
         dest[i + j] = src[j];        
         j++;               
