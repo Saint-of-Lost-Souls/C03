@@ -21,12 +21,15 @@ int main()
    char str1[] = "the cake is a lie"; // declaration of char array  
    char str2[] = "the cake is a lie"; // declaration of char array  
    
-   int c = ft_strcmp(str1,str2); // calling compare() function  
+   int result = ft_strcmp(str1,str2); // calling compare() function  
 
-   if(c == 0)  
-   printf("strings are same");  
-   else  
-   printf("strings are not same");  
-  
-    return 0;  
+   if (result == 0)
+    {
+        printf("These strings are the same, but competely different");
+    }
+    else
+    {
+        printf("there strings are different and there's nothing wrong with that");
+    }
+    return 0; 
 }
